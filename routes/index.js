@@ -5,8 +5,11 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
-router.get('/TeamPage', function(req, res, next) {
-  res.render('index', { title: 'Team Page' });
+router.get('/homepage', function(req, res, next) {
+  res.render('index', { title: 'Home' });
+});
+router.get('/teampage', function(req, res, next) {
+  res.render('index', { title: 'Team' });
 });
 
 module.exports = router;
